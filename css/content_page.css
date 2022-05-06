@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===================================
+All Content
+======================================*/
+    
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #0c0f42;
+}
+
+#main {
+    
+    /* background-color: #ffcb00; */
+    /* background: linear-gradient(135deg, #ffcb00 25%, white 0, white 50%, #ffcb00 0, #ffcb00 75%, white 0 ); */
+    background-size: 30px 30px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cafe24SsurroundAir';
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 15px;
+    padding: 0 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 1024px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#container {
+    border-left: 1px solid rgb(245, 245, 245);
+    border-right: 1px solid rgb(245, 245, 245);
+    background-color: white;
+}
+
+footer {
+    width: 1024px;
+    background-color: rgb(245, 245, 245);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 999;
+}
+
+#footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contents {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #0c0f42;
+}
+
+/* ----------------------------------- */
+
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    letter-spacing: 0.3rem;
+}
+
+#logo span {
+    position: relative;
+    animation: logo_frame 1.5s infinite;
+
+}
+
+#logo span:nth-of-type(1) {
+    margin-left: 10px;
+    animation-delay: .1s;
+}
+
+#logo span:nth-of-type(2) {
+    animation-delay: .3s;
+}
+
+#logo span:nth-of-type(3) {
+    animation-delay: .5s;
+}
+
+#logo span:nth-of-type(4) {
+    animation-delay: .7s;
+}
+
+#logo span:nth-of-type(5) {
+    animation-delay: .9s;
+}
+
+@keyframes logo_frame {
+    0% {
+        top: 0;
+    } 
+    20% {
+        top: -0.2rem;
+    }
+    40% {
+        top: 0
+    }
+    60% {
+        top: 0
+    }
+    80% {
+        top: 0
+    }
+    100% {
+        top: 0
+    }
+}
+
+/* ----------------------------------- */
+
+#menu-bar {
+    width: 300px;
+}
+
+#menu-bar-lists {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#menu-bar-lists li a {
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+#menu-bar-lists li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ===================================
+introduction.html
+======================================*/
+
+.introduction-home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction-header {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: inherit;
+}
+
+#introduction-msg {
+    content: '';
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    border-style: double;
+    border-color: #ffcb00;
+	border-radius: 6rem;
+    display: none;
+}
+
+#introduction-msg p {
+    padding: 50px;
+}
+
+#introduction-msg:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 1em solid transparent;
+	border-bottom-color: #ffcb00;
+	border-top: 0;
+	margin-left: -1em;
+	margin-top: -1em;
+}
+
+#introduction-img-wrapper {
+    margin: 70px 50px;
+}
+
+.introduction-img {
+    width: 40vw;
+    max-width: 400px;
+    height: 40vw;
+    max-height: 400px;
+    border-radius: 60% 45% 45% 60% / 70% 50% 70% 50%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.introduction-img::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1vw;
+    left: 0;
+    border-radius: inherit;
+    border: 1px solid #0c0f42;
+}
+
+.introduction-img::after {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    top: -8%;
+    left: -5%;
+    border-radius: inherit;
+    border: 1px solid #0c0f42;
+}
+
+.introduction-img:hover {
+    animation: introduction_img_frame 30s infinite linear;
+}
+
+.introduction-img:hover:before {
+    transform: rotate(67deg);
+    animation: introduction_img_frame 15s infinite linear;
+}
+
+.introduction-img:hover:after {
+    transform: rotate(223deg);
+    z-index: -1;
+    animation: introduction_img_frame 20s infinite linear;
+}
+
+@keyframes introduction_img_frame {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) scale(.9);
+    }
+    75% {
+        transform: rotate(270deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+#introduction-img-click {
+    text-align: center;
+    transform: translateY(-25px);
+}
+
+/* ----------------------------------- */
+
+.about-me {
+    border-top: 2px solid rgb(245, 245, 245);
+}
+
+#about-me-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-img img {
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.about-me-table {
+    justify-content: center;
+}
+
+.about-me-table th, .about-me-table td {
+    text-align: center;
+}
+
+.about-me h2 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.about-me-table tbody th, .about-me-table tbody td {
+    font-weight: bolder;
+    width: 250px;
+}
+
+.about-me-table tbody th i {
+    font-size: 50px;
+}
+
+.about-me-table tbody th i:hover {
+    color: rgb(255, 0, 55);
+    transform: rotate(45deg);
+    transform-origin: 100% 0;
+}
+
+/* ===================================
+hobby.html
+======================================*/
+
+#hobby-home, #hobby-baseball, #hobby-coffee, #hobby-bicycle, #hobby-funny-gif {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobby-home, #hobby-baseball, #hobby-coffee, #hobby-bicycle {
+    border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+#hobby-baseball th, #hobby-coffee th,
+#hobby-bicycle th, #hobby-funny-gif th {
+    padding-bottom: 50px;
+}
+
+#hobby-baseball td:first-of-type,
+#hobby-coffee td:first-of-type,
+#hobby-bicycle td:first-of-type,
+#hobby-funny-gif td:first-of-type {
+    padding-right: 35px;
+}
+
+/* ----------------------------------- */
+
+#hobby-menu-bar {
+    display: none;
+    width: 50px;
+    height: 110vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#hobby-menu-bar i {
+    font-size: 15px;
+    padding-bottom: 70px;
+}
+
+#hobby-menu-bar i:hover {
+    color: rgb(255, 0, 55);
+    transform: rotate(15deg);
+}
+
+/* ----------------------------------- */
+
+#hobby-wrap h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Yeongdo-Rg';
+}
+
+#hobby-wrap h1 {
+    font-size: 35px;
+}
+
+#hobby-wrap h1:hover {
+    color: #ffcb00;
+}
+
+#hobby-wrap img {
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+#hobby-wrap img:hover {
+    opacity: 50%;
+}
+
+/* ----------------------------------- */
+
+.text-home {
+    /* 무한 반복 */
+    display: inline;
+    vertical-align: auto;
+    border-right: .05em solid #0c0f42;
+    animation: cursor 0.2s step-end infinite;
+    opacity: 80%;
+}
+
+.text-hobby-home {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.text-baseball span {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.text-baseball:hover span {
+    transform: translateX(-214px)
+}
+
+/* ===================================
+roadmap.html
+======================================*/
+
+#roadmap-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#roadmap-header {
+    font-family: 'Yeongdo-Rg';
+    font-size: 30px;
+}
+
+#stairs-box-wrapper {
+    padding-top: 550px;
+}
+
+.stairs {
+    float: left;
+    width: 150px;
+    height: 1px;
+}
+
+#upstair {
+    position: absolute;
+    transform: translate(-310px, 145px);
+    z-index: 300;
+    animation: upstairs-frame 5s steps(1, start) .5s 1 normal forwards;
+}
+
+@keyframes upstairs-frame {
+    0% {
+        transform: translate(-310px, 145px);
+    }
+    25% {
+        transform: translate(-165px, 45px);
+    }
+    50% {
+        transform: translate(-15px, -55px);
+    }
+    75% {
+        transform: translate(140px, -155px);
+    }
+    100% {
+        transform: translate(285px, -255px);
+    }
+}
+
+#upstair i {
+    font-size: 70px;
+    color: rgb(255, 0, 55);
+}
+
+#roadmap-wrapper table {
+    border-collapse: collapse;
+}
+
+#roadmap-wrapper tbody th {
+    padding: 5px;
+    width: 150.5px;
+    background-color: #ffeca8;
+}
+
+#roadmap-wrapper tbody td {
+    padding: 10px;
+    background-color: #fefaeb;
+}
+
+#roadmap-wrapper tbody td:first-of-type:hover {
+    transform: scale(1.5);
+}
+
+#roadmap-wrapper tbody td:nth-of-type(2):hover {
+    transform: scale(1.5);
+}
+
+#roadmap-wrapper tbody td:nth-of-type(3):hover {
+    transform: scale(1.5);
+}
+
+#roadmap-wrapper tbody td:last-of-type:hover {
+    transform: scale(1.5);
+}
+
+.contents h4 {
+    margin: 10px;
+} 
+
+.contents hr {
+    margin: 10px;
+}
+
+.contents p {
+    font-size: 15px;
+}
+
+/* ===================================
+join.html / login.html / admin.html
+======================================*/
+
+#join-wrapper, #login-wrapper, #admin-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-table, .login-table, .admin-table {
+    justify-content: center;
+    text-align: center;
+}
+
+.join-table th, .join-table td,
+.login-table th, .login-table td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.join-table h2, .login-table h2 {
+    padding: 20px;
+    border-bottom: 1px solid #0c0f42;
+}
+
+.join-table tbody th, .login-table tbody th {
+    font-size: 15px;
+}
+
+.join-table tbody td, .login-table tbody td {
+    width: 200px;
+}
+
+.join-table thead th, .login-table thead th {
+    padding-bottom: 30px;
+}
+
+#tel1 {
+    width: 22%;
+}
+
+#tel2 {
+    width: 27%;
+}
+
+#tel3 {
+    width: 27%;
+}
+
+.btn-wrapper input {
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: #ffcb00;
+}
+
+input {
+    border: none;
+    border-bottom: 1px dotted #0c0f42;
+    font-weight: bold;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.req {
+    color: rgb(255, 0, 55);
+}
+
+.join-error-msg, .login-error-msg {
+    font-size: 14px;
+    color: rgb(255, 0, 55);
+}
+
+/* ----------------------------------- */
+
+#admin-header {
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+#admin-wrapper {
+    flex-direction: column;
+    border-bottom: 30px;
+}
+
+#user-search-all {
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #ffcb00;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.admin-table {
+    display: none;
+    border-top: 1px solid rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-collapse: collapse;
+}
+
+.admin-table th, .adim-table td {
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.admin-table th {
+    background-color: rgb(245, 245, 245);
+    font-size: 17px;
+    font-weight: bold;
+    width: 150px;
+    padding: 25px;
+}
+
+.admin-table th:first-of-type {
+    width: 5px;
+}
+
+.admin-table th:nth-of-type(4) {
+    width: 10px;
+}
+
+.admin-table th:nth-last-of-type(2) {
+    width: 180px;
+}
+
+.admin-table th:last-of-type {
+    width: 150px;
+}
+
+.admin-table td {
+    font-size: 16px;
+    padding: 20px;
+}

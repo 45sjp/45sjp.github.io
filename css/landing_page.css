@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+/* ===================================
+index.html
+======================================*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #0c0f42;
+}
+
+#main {
+    width: 1024px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 15px;
+    padding: 0 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 1024px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#container {
+    background-color: #ffcb00;
+}
+
+#main-contents {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    width: 1024px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------- */
+
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    letter-spacing: 0.3rem;
+}
+
+#logo span {
+    /* color: #0c0f42; */
+    position: relative;
+    animation: logo_frame 1.5s infinite;
+
+}
+
+#logo span:nth-of-type(1) {
+    margin-left: 10px;
+    animation-delay: .1s;
+}
+
+#logo span:nth-of-type(2) {
+    animation-delay: .3s;
+}
+
+#logo span:nth-of-type(3) {
+    animation-delay: .5s;
+}
+
+#logo span:nth-of-type(4) {
+    animation-delay: .7s;
+}
+
+#logo span:nth-of-type(5) {
+    animation-delay: .9s;
+}
+
+@keyframes logo_frame {
+    0% {
+        top: 0;
+    } 
+    20% {
+        top: -0.2rem;
+    }
+    40% {
+        top: 0
+    }
+    60% {
+        top: 0
+    }
+    80% {
+        top: 0
+    }
+    100% {
+        top: 0
+    }
+}
+
+/* ----------------------------------- */
+
+.menu-bar-img {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    opacity: 70%;
+}
+
+.menu-bar-img:hover {
+    animation: menu_bar_frame 1s 1;
+    transform-origin: 50% 50%;
+}
+
+@keyframes menu_bar_frame {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------------------------- */
+
+.main-img {
+    display: flex;
+    padding: 70px 70px;
+    width: 80vh;
+    /* position: fixed; */
+}
+
+#introduceMsg, #main-contact a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#introduceMsg {
+    position: inherit;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#main-contact a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 65px;
+}
+
+#main-contact a:hover {
+    font-weight: bold;
+}
+
+/* ----------------------------------- */
+
+.menu {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    text-align: right;
+    position: fixed;
+    bottom: -16rem;
+    margin-left: 365px;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li:hover {
+    transform: translateX(-180px);
+}
+
+.menu li a {
+    font-size: 100px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    
+    /* 폰트 테두리 */
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #0c0f42;
+}
+
+.menu li a:hover {
+    color: #0c0f42;
+}
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN | LOGIN</title>
+    
+    <link rel="icon" type="image/jpg" href="../SujinPark/images/title_img.jpg">
+    <link rel="stylesheet" href="../SujinPark/css/content_page.css">
+</head>
+
+<body id="main">
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <span>S</span>
+                    <span>U</span>
+                    <span>J</span>
+                    <span>I</span>
+                    <span>N</span>
+                </a>
+            </div>
+            <div id="menu-bar">
+                <nav role="navigation">
+                    <ul id="menu-bar-lists">
+                        <li><a href="introduction.html">ABOUT</a></li>
+                        <li><a href="hobby.html">HOBBY</a></li>
+                        <li><a href="roadmap.html">ROADMAP</a></li>
+                        <li><a href="join.html">JOIN</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="join">
+            <form action="login.html" name="memberFrm">
+                <div id="join-wrapper">
+                    <table class="join-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2"><h2>Sign Up</h2></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>ID<span class="req">*</span></th>
+                                <td>
+                                    <input type="text" name="userId" id="userId" placeholder="영문소문자/숫자, 4~12자리">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div id="id-error-msg" class="join-error-msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PASSWORD<span class="req">*</span></th>
+                                <td>
+                                    <input type="password" name="pwd" id="pwd" placeholder="문자/숫자/특수문자, 8~15자리">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div id="password-error-msg" class="join-error-msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PWD CHECK</th>
+                                <td>
+                                    <input type="password" id="pwdCheck">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div id="pwd-check-error-msg" class="join-error-msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>NAME<span class="req">*</span></th>
+                                <td>
+                                    <input type="text" name="userName" id="userName" placeholder="한글 2글자 이상">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div id="name-error-msg" class="join-error-msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>EMAIL<span class="req">*</span></th>
+                                <td>
+                                    <input type="email" name="email" id="email" placeholder="@ 포함 필수">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div id="email-error-msg" class="join-error-msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PHONE<span class="req">*</span></th>
+                                <td>
+                                    <input type="text" name="tel1" id="tel1" class="phone"> -
+                                    <input type="text" name="tel2" id="tel2" class="phone"> -
+                                    <input type="text" name="tel3" id="tel3" class="phone">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div id="phone-error-msg" class="join-error-msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="joinConfirm">[필수] 회원가입 동의</label>
+                                    <input type="checkbox" name="joinConfirm" id="joinConfirm" required>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="btn-wrapper">
+                                    <input type="submit" value="JOIN">
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <ul id="footer-list">
+                <li>
+                    <p class="footer-contents">Copyright ⓒ 2022 All rights reserved by SUJIN</p>
+                </li>
+                <li>
+                    <a class="footer-contents" href="mailto:45sjp@naver.com?subject=안녕하세요. 문의드립니다!
+                        &amp;body=안녕하세요. 문의 내용을 작성해주세요😊%0D%0A
+                        &amp;target=_blank">
+                        Should you have any questions, mail to <strong>45sjp@naver.com</strong>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../SujinPark/js/join.js"></script>
+</body>
+
+</html>

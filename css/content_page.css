@@ -31,7 +31,6 @@ All Content
 }
 
 #main {
-    
     /* background-color: #ffcb00; */
     /* background: linear-gradient(135deg, #ffcb00 25%, white 0, white 50%, #ffcb00 0, #ffcb00 75%, white 0 ); */
     background-size: 30px 30px;
@@ -174,7 +173,7 @@ introduction.html
 ======================================*/
 
 .introduction-home {
-    height: 100vh;
+    min-height: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,7 +306,7 @@ introduction.html
 
 #about-me-wrapper {
     width: 100%;
-    height: 100vh;
+    min-height: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,6 +352,7 @@ hobby.html
 
 #hobby-home, #hobby-baseball, #hobby-coffee, #hobby-bicycle, #hobby-funny-gif {
     height: 100vh;
+    min-height: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,6 +458,7 @@ roadmap.html
 #roadmap-wrapper {
     width: 100%;
     height: 100vh;
+    min-height: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -559,6 +560,7 @@ join.html / login.html / admin.html
 #join-wrapper, #login-wrapper, #admin-wrapper {
     width: 100%;
     height: 100vh;
+    min-height: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
